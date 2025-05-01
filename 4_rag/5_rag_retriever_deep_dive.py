@@ -1,5 +1,4 @@
 import os
-
 from dotenv import load_dotenv
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
@@ -54,8 +53,7 @@ query = "How did Juliet die?"
 # It finds the most similar documents to the query vector based on cosine similarity.
 # Use this when you want to retrieve the top k most similar documents.
 print("\n--- Using Similarity Search ---")
-query_vector_store("chroma_db_with_metadata", query,
-                   embeddings, "similarity", {"k": 3})
+query_vector_store("chroma_db_with_metadata", query, embeddings, "similarity", {"k": 3})
 
 # 2. Max Marginal Relevance (MMR)
 # This method balances between selecting documents that are relevant to the query and diverse among themselves.

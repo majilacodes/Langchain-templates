@@ -1,0 +1,1 @@
+poetry run pip install --force-reinstall tokenizers transformers sentence-transformers

@@ -18,7 +18,6 @@ positive_feedback_template = ChatPromptTemplate.from_messages(
          "Generate a thank you note for this positive feedback: {feedback}."),
     ]
 )
-
 negative_feedback_template = ChatPromptTemplate.from_messages(
     [
         ("system", "You are a helpful assistant."),
@@ -26,7 +25,6 @@ negative_feedback_template = ChatPromptTemplate.from_messages(
          "Generate a response addressing this negative feedback: {feedback}."),
     ]
 )
-
 neutral_feedback_template = ChatPromptTemplate.from_messages(
     [
         ("system", "You are a helpful assistant."),
@@ -36,7 +34,6 @@ neutral_feedback_template = ChatPromptTemplate.from_messages(
         ),
     ]
 )
-
 escalate_feedback_template = ChatPromptTemplate.from_messages(
     [
         ("system", "You are a helpful assistant."),
